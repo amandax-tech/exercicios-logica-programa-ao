@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <h2>Conversor de Reais para Dólares</h2>
+    <label for="reais">Digite o valor em Reais:</label>
+    <input type="number" id="reais" step="0.01">
+    <button onclick="converter()">Converter</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function converter() {
+            let reais = parseFloat(document.getElementById("reais").value);
+            if (!isNaN(reais)) {
+                let dolares = reais / 5.0; // cotação fixa
+                document.getElementById("resultado").innerText =
+                    "Valor em Dólares: US$ " + dolares.toFixed(2);
+            } else {
+                document.getElementById("resultado").innerText =
+                    "Por favor, insira um valor válido.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 3</title>
+</head>
+<body>
+  <h1>Exercício 3: Soma de Dois Números</h1>
+  <script>
+    // Pede o primeiro número
+    let numero1 = Number(prompt("Digite o primeiro número:"));
+
+    // Pede o segundo número
+    let numero2 = Number(prompt("Digite o segundo número:"));
+
+    // Calcula a soma
+    let soma = numero1 + numero2;
+
+    // Mostra na tela
+    document.write("A soma é: " + soma);
+
+    // Também mostra no console
+    console.log("Resultado da soma: " + soma);
+  </script>
+</body>
+</html>

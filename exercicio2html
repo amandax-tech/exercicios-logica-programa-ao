@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercicio 2</title>
+</head>
+<body>
+  <h1>Exercicio 2: Nome e Sobrenome</h1>
+  <script>
+    // pede o nome
+    let nome = prompt("Digite seu nome:");
+
+    // pede o sobrenome
+    let sobrenome = prompt("Digite seu sobrenome:");
+
+    // Junta nome e sobrenome (concatenação)
+    let nomeCompleto = nome + " " + sobrenome;
+
+    // Mostra na tela
+    document.write("Seu nome completo é: " + nomeCompleto);
+
+    // Também mostra no console
+    console.log("Nome completo: " + nomeCompleto);
+  </script>
+</body>
+</html>

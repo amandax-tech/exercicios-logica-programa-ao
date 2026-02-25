@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aumento Salarial</title>
+</head>
+<body>
+    <h2>Calculadora de Aumento Salarial</h2>
+    <label for="salario">Digite o salário do funcionário:</label>
+    <input type="number" id="salario" step="0.01">
+    <button onclick="calcularAumento()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularAumento() {
+            let salario = parseFloat(document.getElementById("salario").value);
+            if (!isNaN(salario)) {
+                let novoSalario = salario * 1.15;
+                document.getElementById("resultado").innerText =
+                    "Novo salário com 15% de aumento: R$ " + novoSalario.toFixed(2);
+            } else {
+                document.getElementById("resultado").innerText =
+                    "Por favor, insira um valor válido.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 4</title>
+</head>
+<body>
+  <h1>Exercício 4: Calculadora de Média</h1>
+  <script>
+    // Pede as três notas
+    let nota1 = Number(prompt("Digite a primeira nota:"));
+    let nota2 = Number(prompt("Digite a segunda nota:"));
+    let nota3 = Number(prompt("Digite a terceira nota:"));
+
+    // Calcula a média aritmética
+    let media = (nota1 + nota2 + nota3) / 3;
+
+    // Mostra na tela
+    document.write("A média das notas é: " + media);
+
+    // Também mostra no console
+    console.log("Média calculada: " + media);
+  </script>
+</body>
+</html>

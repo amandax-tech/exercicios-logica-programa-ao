@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 5</title>
+</head>
+<body>
+  <h1>Exercício 5: Sucessor e Antecessor</h1>
+  <script>
+    // Pede um número
+    let numero = Number(prompt("Digite um número:"));
+
+    // Calcula antecessor e sucessor
+    let antecessor = numero - 1;
+    let sucessor = numero + 1;
+
+    // Mostra na tela
+    document.write("Número digitado: " + numero + "<br>");
+    document.write("Antecessor: " + antecessor + "<br>");
+    document.write("Sucessor: " + sucessor);
+
+    // Também
